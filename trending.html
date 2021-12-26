@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trending</title>
+
+    <style>
+      body {
+        background-color: #192132;
+        color: antiquewhite;
+      }
+      #moviesDesc {
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin: auto;
+        gap: 1%;
+      }
+      /* div{
+            border: 1px solid black;
+        } */
+    </style>
+  </head>
+  <body>
+    <div id="moviesDesc"></div>
+  </body>
+</html>
+<script>
+  let bigDiv = document.getElementById("moviesDesc");
+
+  async function trndMovies() {
+    let movies = await fetch(
+      `https://api.themoviedb.org/3/trending/movie/week?api_key=4cf94a7571c0742fecde95c6c48dc95c`
+    );
+    let moviesData = await movies.json();
+    // console.log(moviesData.results);
+    let moviesArray = moviesData.results;
+    console.log(moviesArray);
+
+    movie(moviesArray);
+  }
+
+  function movie(eachMovie) {
+    eachMovie.forEach(function (movie) {
+      // console.log(movie.original_title);
+
+      let movieName = movie.original_title;
+      let movieImg = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+      let movieRating = movie.vote_average;
+
+      let Div = document.createElement("div");
+
+      let imgBox = document.createElement("div");
+      imgBox.style.width = "100%";
+      imgBox.style.height = "70%";
+      let img = document.createElement("img");
+      img.src = movieImg;
+      img.style.width = "100%";
+      img.style.height = "100%";
+      img.style.borderRadius = "10px";
+      imgBox.append(img);
+
+      let nameDiv = document.createElement("div");
+      nameDiv.style.fontSize = "18px";
+      nameDiv.style.fontWeight = "700";
+      nameDiv.style.textAlign = "center";
+      nameDiv.style.margin = "1%";
+      nameDiv.textContent = movieName;
+
+      let movieRatingDiv = document.createElement("div");
+      movieRatingDiv.style.fontWeight = "600";
+      movieRatingDiv.style.textAlign = "center";
+      movieRatingDiv.textContent = "IMDb Rating:" + movieRating;
+      movieRatingDiv.style.margin = "1%";
+
+      Div.append(imgBox, nameDiv, movieRatingDiv);
+
+      bigDiv.append(Div);
+    });
+  }
+
+  trndMovies();
+</script>

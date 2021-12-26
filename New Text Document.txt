@@ -1,0 +1,33 @@
+1: Which statement is termed as 'Memory Pollution'?
+a) it leads to Access of the declaration premitive datatype from any scope.
+b) let leads to Memory pollution.
+c) var leads to memory pollution.
+d) both a) and c)
+
+2: Among which statement is correct for Implicit Bind?
+a) .this refer to any object by using method call(),apply().
+b) .this refer to the owner object.
+c) both.
+d) none is correct.
+
+3: Message Queue and CallBack Queue are same.
+a) True.
+b) False.
+
+4: What is Execution Context?
+
+
+// let body = document.querySelector("body");
+    // let div = document.createElement("div");
+    // div.setAttribute("id", "errorBox");
+
+    // let img = document.createElement("img");
+    // img.setAttribute("id", "errorImg");
+    // img.src =
+    //   "https://tenor.com/view/404-whoops-afas-afas-software-erro-gif-14844976";
+
+    // div.append(img);
+    // error.body.append(div);
+
+    <div class="tenor-gif-embed" data-postid="14844976" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/404-whoops-afas-afas-software-erro-gif-14844976">404 Whoops GIF</a>from <a href="https://tenor.com/search/404-gifs">404 GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+

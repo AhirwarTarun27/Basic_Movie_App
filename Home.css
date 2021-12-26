@@ -1,0 +1,229 @@
+* {
+  /* background-repeat: no-repeat; */
+  margin: 0;
+  padding: 0;
+}
+
+#slideShow {
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+body {
+  background-color: #192132;
+  color: #fff8da;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  width: 80px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #1f4699;
+  color: antiquewhite;
+}
+button:hover {
+  background-color: blue;
+}
+
+#movieList {
+  border-top: none;
+  height: fit-content;
+  width: 200px;
+  border: 1px solid black;
+  margin-left: 7.5vw;
+  z-index: 2;
+  position: relative;
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#movieName {
+  margin: 5px 0px;
+  cursor: pointer;
+  height: 40px;
+}
+#movieName:hover {
+  background-color: blue;
+}
+
+header {
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+  background-color: #2b4783;
+}
+
+header > div:nth-child(1) {
+  padding: 43px;
+}
+#trnd {
+  width: fit-content;
+}
+
+header > div:nth-child(2) {
+  display: flex;
+  width: 600px;
+  margin-right: 0%;
+  float: right;
+
+  justify-content: right;
+}
+header > div:nth-child(2) > div {
+  float: right;
+  cursor: pointer;
+  padding: 26px;
+}
+
+/* main div css */
+
+#main {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  grid-template-columns: repeat(4, 20%);
+  position: relative;
+  z-index: 1;
+  gap: 4.5%;
+  justify-content: space-between;
+}
+
+.mainImg {
+  border-radius: 25px;
+  position: relative;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.movie_img {
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+  height: 100%;
+}
+
+.img_overlay {
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  /* display: none; */
+}
+
+.img_overlay:hover {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.overDiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 45%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.rdate {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* body {
+  position: relative;
+} */
+/* for Hiding the box */
+
+/* put main box as relative,zindex less and secBox as absolute and zindex more for pagination effect */
+.secBox {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* css for pagination box */
+
+#mainDiv2 {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  margin-top: 4%;
+  justify-content: center;
+  /* border: 1px solid white; */
+  gap: 40px;
+  background-color: rgba(17, 16, 16, 0.6);
+}
+
+.leftBox {
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid white; */
+}
+
+.pageOverImg {
+  width: 100%;
+  height: 100%;
+}
+
+.rightBox {
+  width: 65%;
+  height: 100%;
+  /* border: 1px solid white; */
+}
+
+.remove {
+  float: right;
+  width: fit-content;
+  /* border: 1px solid red; */
+}
+.remove > button {
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #2b4783;
+  color: antiquewhite;
+}
+
+.pageOverHead {
+  width: 93%;
+  padding: 20px;
+  text-align: center;
+  /* border: 1px solid white; */
+  margin-top: 35px;
+}
+.pageOverHead > h1 {
+  letter-spacing: 4px;
+  font-size: 35px;
+}
+
+.discription > p {
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+#errorBox {
+  margin: auto;
+  width: fit-content;
+  /* border: 1px solid red; */
+  margin-top: 10vh;
+}

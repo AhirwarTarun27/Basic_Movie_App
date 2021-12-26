@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Home.css" />
+    <script
+      src="https://kit.fontawesome.com/6b36d24ab1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Tarun Movie World</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <label for="search">Search Movie :</label>
+        <input
+          type="text"
+          oninput="debounce(listMovies,1000)"
+          id="search"
+          placeholder="Enter Movie here"
+        />
+        <button onclick="Select(event)">Submit</button>
+        <a href="trending.html"><button id="trnd">Trending Movies</button></a>
+        <div id="movieList"></div>
+      </div>
+
+      <div>
+        <div><p>Home</p></div>
+        <div><p>Popular Series</p></div>
+        <div><p>Tarun's Popular Shows</p></div>
+        <div><p>Create Account</p></div>
+        <div><p>Sign In</p></div>
+      </div>
+    </header>
+    <main>
+      <div id="slideShow"></div>
+      <div id="main"></div>
+    </main>
+    <!-- <div id="secBox"></div> -->
+  </body>
+</html>
+<script src="Home.js"></script>
