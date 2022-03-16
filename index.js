@@ -113,7 +113,7 @@ let body = document.querySelector("body");
 
 function Select() {
   //   e.preventDefault();
-  var search = document.getElementById("search").value;
+  let search = document.getElementById("search").value;
 
   let newUrl = url + search + `&apikey=${apikey}`;
   console.log("newUrl:", newUrl);
