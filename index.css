@@ -6,8 +6,9 @@
 
 #slideShow {
   width: 90%;
-  height: 300px;
+  height: 330px;
   margin: 20px auto;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
 
 input {
   width: 200px;
+  height: 27px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-left: 4px;
 }
 
 button {
@@ -26,6 +31,9 @@ button {
   font-weight: bold;
   background-color: #1f4699;
   color: antiquewhite;
+  padding: 6px;
+  margin: 0px 6px;
+  cursor: pointer;
 }
 button:hover {
   background-color: blue;
@@ -36,7 +44,7 @@ button:hover {
   height: fit-content;
   width: 200px;
   border: 1px solid black;
-  margin-left: 6.6vw;
+  margin-left: 7.6vw;
   z-index: 2;
   position: relative;
   display: none;
@@ -70,11 +78,13 @@ header > div:nth-child(1) {
 
 header > div:nth-child(2) {
   display: flex;
-  width: 600px;
+  width: 50%;
   margin-right: 0%;
   float: right;
-
   justify-content: right;
+  padding: 18px;
+  font-size: 17px;
+  font-weight: bolder;
 }
 header > div:nth-child(2) > div {
   float: right;
@@ -164,7 +174,7 @@ img {
 #mainDiv2 {
   display: flex;
   width: 70%;
-  height: 80%;
+  height: 75%;
   margin: auto;
   margin-top: 4%;
   justify-content: center;
@@ -196,12 +206,13 @@ img {
   /* border: 1px solid red; */
 }
 .remove > button {
-  width: 60px;
-  height: 30px;
+  width: 80px;
+  height: 40px;
   font-size: 18px;
   font-weight: bold;
-  background-color: #2b4783;
+  background-color: rgb(43, 71, 131);
   color: antiquewhite;
+  padding: 3px;
 }
 
 .pageOverHead {

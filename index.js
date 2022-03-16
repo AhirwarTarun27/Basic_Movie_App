@@ -87,6 +87,9 @@ async function listMovies() {
 
     p.onclick = () => {
       showImdb(movie.Title);
+      let res = document.getElementById("movieList");
+      document.getElementById("search").value = "";
+      res.style.display = "none";
     };
     // let np = document.getElementById("movieName");
     // np.addEventListener("click", function () {
@@ -110,6 +113,66 @@ function debounce(func, delay) {
 }
 
 let body = document.querySelector("body");
+
+async function random() {
+  let url = "https://www.omdbapi.com/?apikey=a3756eaf&s=avengers";
+
+  try {
+    const response = await fetch(url);
+
+    const new_data = await response.json();
+    // console.log("new_data:", new_data);
+    randomMovie(new_data.Search);
+  } catch (error) {
+    console.log(error);
+  }
+}
+let mainDiv = document.getElementById("main");
+random();
+
+function randomMovie(product) {
+  product.forEach(function (data) {
+    // console.log("data:", data);
+
+    //for Pagination effect i made mainImg div where all the items were inserted and make position: relative
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "mainImg");
+
+    //i made image as a display block which eleminate bottom space
+    let img = document.createElement("img");
+    img.setAttribute("class", "movie_img");
+    img.src = data.Poster;
+
+    //overlay box for cover the background by setting position absolute
+    let div_overlay = document.createElement("div");
+    div_overlay.setAttribute("class", "img_overlay");
+    div_overlay.addEventListener("click", () => {
+      showImdb(data.Title);
+      window.scrollTo(0, 0);
+    });
+
+    let overDiv = document.createElement("div");
+    overDiv.setAttribute("class", "overDiv");
+
+    var p_title = document.createElement("p");
+    p_title.setAttribute("id", "title");
+    p_title.innerText = data.Title;
+
+    let r_date = document.createElement("p");
+    r_date.setAttribute("class", "rdate");
+    r_date.innerText = data.Year;
+
+    overDiv.append(p_title);
+
+    div_overlay.append(overDiv, r_date);
+
+    div1.append(img, div_overlay);
+
+    mainDiv.append(div1);
+
+    // document.getElementById("search").value = "";
+  });
+}
 
 function Select() {
   //   e.preventDefault();
@@ -142,6 +205,9 @@ function Select() {
       div.append(div2);
       body.append(div);
     }
+    document.getElementById("search").value = "";
+    let res = document.getElementById("movieList");
+    res.style.display = "none";
   }
 
   let mainDiv = document.getElementById("main");
@@ -164,7 +230,10 @@ function Select() {
       //overlay box for cover the background by setting position absolute
       let div_overlay = document.createElement("div");
       div_overlay.setAttribute("class", "img_overlay");
-      div_overlay.addEventListener("click", () => showImdb(data.Title));
+      div_overlay.addEventListener("click", () => {
+        showImdb(data.Title);
+        window.scrollTo(0, 0);
+      });
 
       let overDiv = document.createElement("div");
       overDiv.setAttribute("class", "overDiv");
@@ -193,6 +262,7 @@ function Select() {
 
   //function for the pageination box
 }
+
 function showImdb(name) {
   let url2 = "https://www.omdbapi.com/?t=";
 
