@@ -10,7 +10,7 @@
 - `CSS`
 - `JavaScript`
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codertarun&hide=ejs,shell&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AhirwarTarun27&hide=ejs,shell&theme=tokyonight)
 ---
 
 ---
@@ -25,11 +25,11 @@ First search the movie name on the search bar and it will auto-suggest the movie
 
 ---
 - **Home Page**
-![Screenshot (160)](https://user-images.githubusercontent.com/91532627/158649923-50427861-ff01-4fcf-ad75-6bfb90759859.png)
+![Screenshot (164)](https://user-images.githubusercontent.com/91532627/158653286-7338b5a1-4fee-45ba-86d8-2821911366fe.png)
 
 ---
 - **Debouncing Effect**
-![Screenshot (163)](https://user-images.githubusercontent.com/91532627/158649942-337992fe-1d77-4cfc-a864-151db0d48693.png)
+![Screenshot (165)](https://user-images.githubusercontent.com/91532627/158653482-75239827-6df1-4d22-af2f-cf4cdd38138e.png)
 
 ---
 
