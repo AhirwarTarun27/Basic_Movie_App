@@ -54,7 +54,7 @@ async function displayMovies() {
     }
 
     let response = await fetch(
-      `http://www.omdbapi.com/?s=${name}&apikey=a3756eaf`
+      `https://www.omdbapi.com/?s=${name}&apikey=a3756eaf`
     );
 
     let new_data = await response.json();
