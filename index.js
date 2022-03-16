@@ -194,7 +194,7 @@ function Select() {
   //function for the pageination box
 }
 function showImdb(name) {
-  let url2 = "http://www.omdbapi.com/?t=";
+  let url2 = "https://www.omdbapi.com/?t=";
 
   // let title = document.getElementById("title");
   // console.log("title:", title.innerText);
