@@ -18,7 +18,7 @@ body {
 
 input {
   width: 200px;
-  height: 27px;
+  height: 25px;
   border: 2px solid black;
   border-radius: 8px;
   margin-left: 4px;
@@ -31,7 +31,7 @@ button {
   font-weight: bold;
   background-color: #1f4699;
   color: antiquewhite;
-  padding: 6px;
+  padding: 3px 9px;
   margin: 0px 6px;
   cursor: pointer;
 }
@@ -64,13 +64,13 @@ button:hover {
 
 header {
   display: flex;
-  height: 110px;
+  height: 80px;
   justify-content: space-between;
   background-color: #2b4783;
 }
 
 header > div:nth-child(1) {
-  padding: 43px;
+  padding: 25px 43px;
 }
 #trnd {
   width: fit-content;
@@ -82,7 +82,7 @@ header > div:nth-child(2) {
   margin-right: 0%;
   float: right;
   justify-content: right;
-  padding: 18px;
+  padding: 0.25% 43px;
   font-size: 17px;
   font-weight: bolder;
 }
