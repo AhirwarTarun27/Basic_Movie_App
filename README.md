@@ -10,7 +10,7 @@
 - `CSS`
 - `JavaScript`
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codertarun&hide=ejs,shell&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AhirwarTarun27&hide=ejs,shell&theme=tokyonight)
 ---
 
 ---
