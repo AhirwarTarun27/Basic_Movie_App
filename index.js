@@ -1,5 +1,5 @@
 const apikey = `a3756eaf`;
-let url = "http://www.omdbapi.com/?s=";
+let url = "https://www.omdbapi.com/?s=";
 
 var images = [
   "https://live.staticflickr.com/4191/34054101300_067a8df1af_b.jpg",
