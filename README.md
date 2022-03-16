@@ -24,8 +24,17 @@ First search the movie name on the search bar and it will auto-suggest the movie
 ### Screenshots :camera:
 
 ---
+- **Home Page**
+![Screenshot (160)](https://user-images.githubusercontent.com/91532627/158649923-50427861-ff01-4fcf-ad75-6bfb90759859.png)
+
+---
 - **Debouncing Effect**
-- ![Screenshot (68)](https://user-images.githubusercontent.com/91532627/155184140-cb8675d8-f6b9-40d2-b1fb-0e2eccd04d39.png)
+![Screenshot (163)](https://user-images.githubusercontent.com/91532627/158649942-337992fe-1d77-4cfc-a864-151db0d48693.png)
+
+---
+
+- **Movie Description**
+![Screenshot (162)](https://user-images.githubusercontent.com/91532627/158649955-f5b9eee7-edd3-401e-9225-11df025e9870.png)
 
 ---
 - **Searched Movie**
