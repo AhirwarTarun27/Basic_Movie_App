@@ -85,11 +85,18 @@ header > div:nth-child(2) {
   padding: 0.25% 43px;
   font-size: 17px;
   font-weight: bolder;
+  text-align: center;
 }
 header > div:nth-child(2) > div {
   float: right;
   cursor: pointer;
   padding: 26px;
+}
+
+header > div:nth-child(2) > div:hover {
+  color: rgb(189, 182, 182);
+  font-size: 17.5px;
+  font-weight: bold;
 }
 
 /* main div css */
@@ -128,7 +135,7 @@ header > div:nth-child(2) > div {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
-      cursor: pointer;
+  cursor: pointer;
   /* display: none; */
 }
 
